@@ -5,7 +5,7 @@ import './MovieCard.css';
 const MovieCard = () => (
     <div className="card">
         <div className="card-image">
-            <img src="../../../public/assets/images/image1.jpg" alt="image1"/>
+            <img src={require("../../images/image1.jpg")} alt="image1"/>
 
         </div>
         <div className="card-text">
