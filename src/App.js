@@ -1,24 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import MovieCard from "./components/MovieCard/MovieCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="container-column">
+        <header>
+
+          <h1>Your Logo</h1>
+        </header>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div className="banner">
+          <h2>Banner</h2>
+        </div>
+
+
+        <div className="container-row">
+          <div className="sidebar box">
+            <h2>Sidebar Box</h2>
+          </div>
+
+          <div className="body-area">
+            <MovieCard></MovieCard>
+              <MovieCard></MovieCard>
+              <MovieCard></MovieCard>
+
+          </div>
+        </div>
+      </div>
   );
 }
 
