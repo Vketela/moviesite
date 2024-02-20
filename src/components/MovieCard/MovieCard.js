@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MovieCard.css';
 
-const MovieCard = () => (
+const MovieCard = ({title}) => (
     <div className="card">
         <div className="card-image">
             <img src={require("../../images/image1.jpg")} alt="image1"/>
@@ -10,7 +10,7 @@ const MovieCard = () => (
         </div>
         <div className="card-text">
             <div className="header">
-                <h2>Anyone but you</h2>
+                <h2>{title}</h2>
                 <div className="meta-info">
                     <p>9.5/10</p>
                     <p>Gengre: RomCom, comedy, feel-good</p>

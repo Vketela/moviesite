@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './MovieCardDeck.css';
+import MovieCard from "../MovieCard/MovieCard";
 
 const MovieCardDeck = () => (
   <div className="MovieCardDeck">
-    MovieCardDeck Component
+      <MovieCard title={"Anyone but you"}></MovieCard>
+      <MovieCard title={"Aquaman"}></MovieCard>
+      <MovieCard title={"frozen"}></MovieCard>
   </div>
 );
 

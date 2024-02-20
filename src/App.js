@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import MovieCard from "./components/MovieCard/MovieCard";
+import MovieCardDeck from "./components/MovieCardDeck/MovieCardDeck";
 
 function App() {
   return (
@@ -27,10 +28,7 @@ function App() {
           </div>
 
           <div className="body-area">
-            <MovieCard></MovieCard>
-              <MovieCard></MovieCard>
-              <MovieCard></MovieCard>
-
+            <MovieCardDeck></MovieCardDeck>
           </div>
         </div>
       </div>
