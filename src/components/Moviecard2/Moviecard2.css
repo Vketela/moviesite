@@ -1,0 +1,40 @@
+.card {
+    width: 400px;
+    border-style: ridge;
+    border-radius: 15px;
+    border-width: 3px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+img {
+    width: 100%
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+h2  {
+    text-align: center;
+    color: darkslateblue;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT Bold", fantasy;
+    line-height: 2;
+
+}
+.meta-info {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Arial Rounded MT Bold", fantasy;
+    background-color:#ffff00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p {
+    display:flex;
+    justify-content: space-evenly;
+    font-family: "Arial Rounded MT Bold", fantasy;
+    color: darkslateblue;
+}
