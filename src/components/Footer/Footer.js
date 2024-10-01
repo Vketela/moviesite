@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import './Footer.css';
 
 const Footer = () => (
-  <footer>Tekst komt hier</footer>
+  <div className="Footer">
+    <footer>Tekst komt hier</footer>
+  </div>
 );
 
 Footer.propTypes = {};

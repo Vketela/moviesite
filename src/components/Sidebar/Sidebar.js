@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Sidebar.css';
 
 const Sidebar = () => (
-  <div className="sidebar box">
+  <div className="Sidebar box">
     <h2>Sidebar Box</h2>
   </div>
 );

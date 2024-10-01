@@ -1,1 +1,14 @@
-.NavBar {}
+.NavBar {
+
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+
+}

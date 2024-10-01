@@ -5,32 +5,6 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-
-nav {
-  background-color: #444;
-  color: #fff;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-
-}
-
-.banner {
-  background-color: #add8e6;
-  color: #ffffff;
-  text-align: center;
-}
-
 .container-column {
   display: flex;
   flex-direction: column;
@@ -43,31 +17,14 @@ nav a {
   flex-direction: row;
   flex-grow: 1;
 }
-.sidebar  {
-  flex-direction: row;
-  background-color: #808080;
-  width: 30%;
-  text-align: center;
-}
 
 .body-area {
   display: flex;
   background-color: #899CA0;
   text-align: center;
   flex-grow: 1;
-
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-
-}
 
 
 

@@ -23,6 +23,7 @@ function App() {
           <div className="body-area">
             <MovieCardDeck></MovieCardDeck>
           </div>
+
         </div>
         <Footer></Footer>
       </div>

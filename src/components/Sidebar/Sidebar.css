@@ -1,1 +1,9 @@
-.Sidebar {}
+.Sidebar {
+
+    flex-direction: row;
+    background-color: #4e3fc3;
+    width: 30%;
+    text-align: center;
+    
+}
+   
