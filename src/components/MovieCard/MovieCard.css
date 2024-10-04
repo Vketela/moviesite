@@ -1,5 +1,5 @@
 .card {
-    width: 400px;
+    width: 200px;
     border-style: ridge;
     border-radius: 15px;
     border-width: 3px;
@@ -22,7 +22,7 @@ img {
 
 h2  {
     text-align: center;
-    color: darkslateblue;
+    color: rgb(233, 210, 229);
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT Bold", fantasy;
     line-height: 2;
 
@@ -30,8 +30,8 @@ h2  {
 .meta-info {
     display: flex;
     justify-content: space-evenly;
-    font-family: "Arial Rounded MT Bold", fantasy;
-    background-color:#ffff00;
+    font-family: "Arial", fantasy;
+    background-color:#d21eb1;
     padding: 10px;
     border-radius: 5px;
 
@@ -42,7 +42,7 @@ p {
     display:flex;
     justify-content: space-evenly;
     font-family: "Arial Rounded MT Bold", fantasy;
-    color: darkslateblue;
+    color: rgb(70, 67, 69);
 
 
 }

@@ -1,8 +1,8 @@
 .Footer {
-    background-color: #333;
+    background-color: #da53bf;
     color: #1b1313;
     text-align: center;
-    position: fixed;
+    position: flex;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -11,4 +11,7 @@
     padding: 20;
     font-size: 15px;
     box-sizing: border-box;
+}
+.Footer ul {
+    
 }

@@ -1,6 +1,5 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import MovieCard from "./components/MovieCard/MovieCard";
 import MovieCardDeck from "./components/MovieCardDeck/MovieCardDeck";
 import NavBar from './components/NavBar/NavBar';
 import Banner from './components/Banner/Banner';

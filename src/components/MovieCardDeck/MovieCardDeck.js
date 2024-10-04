@@ -5,9 +5,9 @@ import MovieCard from "../MovieCard/MovieCard";
 
 const MovieCardDeck = () => (
   <div className="MovieCardDeck">
-      <MovieCard title={"Anyone but you"} rating={"9/10"}></MovieCard>
-      <MovieCard title={"Aquaman"}></MovieCard>
-      <MovieCard title={"frozen"}></MovieCard>
+    <MovieCard title={"Anyone but you"} description={"lorem ipsum"}rating={"9/10"} genre={"aktie"}></MovieCard>
+      <MovieCard title={"Aquaman"} rating={"8/10"} genre={"aktie"}></MovieCard>
+    <MovieCard title={"frozen"} rating={"8/10"} genre={"aktie"}></MovieCard>
   </div>
 );
 

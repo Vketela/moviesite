@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MovieCard.css';
 
-const MovieCard = ({title, rating}) => (
+const MovieCard = ({title, rating, genre, description}) => (
     <div className="card">
         <div className="card-image">
             <img src={require("../../images/image1.jpg")} alt="image1"/>
@@ -13,16 +13,11 @@ const MovieCard = ({title, rating}) => (
                 <h2>{title}</h2>
                 <div className="meta-info">
                     <p>{rating}</p>
-                    <p>Gengre: RomCom, comedy, feel-good</p>
+                    <p>{genre}</p>
                 </div>
             </div>
             <div className="description">
-                <p>Plot: After a first date ends badly, that they hate each other.
-                    The pair are soon forced to get along, however, at the wedding of Bea’s sister and Ben’s best
-                    friend.
-                    In order to keep up appearances — and make their exes jealous — they pretend to be in a
-                    relationship.
-                    that us — they pretend to be in a relationship.</p>
+                <p>{description}</p>
             </div>
         </div>
     </div>
