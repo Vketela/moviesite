@@ -1,4 +1,14 @@
 
 .header img {
-    width: 200px;
+    width: 1700px;
+    height: 600PX;
+    padding-top: 95px 50px 70px;
+    
+}
+
+.header {
+    background-color: #0f0662;
+    color: #64cfdd;
+    padding: 10px;
+    text-align: center;
 }

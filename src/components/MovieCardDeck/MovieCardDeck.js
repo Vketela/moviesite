@@ -3,11 +3,41 @@ import PropTypes from 'prop-types';
 import './MovieCardDeck.css';
 import MovieCard from "../MovieCard/MovieCard";
 
+const moviesArray = [
+  {
+    title: "coming soon",
+    description: "lorem ipsum",
+    rating: "9/10",
+    genre: "aktie",
+  },
+
+  {
+    title: "coming soon",
+    description: "lorem ipsum",
+    rating: "9/10",
+    genre: "aktie",
+  },
+  {
+    title: "coming soon",
+    description: "lorem ipsum",
+    rating: "9/10",
+    genre: "aktie",
+  },
+  {
+    title: "coming soon",
+    description: "lorem ipsum",
+    rating: "9/10",
+    genre: "aktie",
+  },
+]
+
+
+
 const MovieCardDeck = () => (
   <div className="MovieCardDeck">
-    <MovieCard title={"Anyone but you"} description={"lorem ipsum"}rating={"9/10"} genre={"aktie"}></MovieCard>
-      <MovieCard title={"Aquaman"} rating={"8/10"} genre={"aktie"}></MovieCard>
-    <MovieCard title={"frozen"} rating={"8/10"} genre={"aktie"}></MovieCard>
+    {moviesArray.map((movie) => (<MovieCard title={movie.title} genre={movie.genre} rating={movie.rating} description={movie.description}></MovieCard>))}      
+    
+
   </div>
 );
 

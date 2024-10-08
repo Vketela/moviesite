@@ -5,7 +5,7 @@ import './MovieCard.css';
 const MovieCard = ({title, rating, genre, description}) => (
     <div className="card">
         <div className="card-image">
-            <img src={require("../../images/image1.jpg")} alt="image1"/>
+            <img src={require("../../images/video.jpg")} alt="video"/>
 
         </div>
         <div className="card-text">

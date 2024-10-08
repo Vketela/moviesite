@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Header.css';
-import popcorn from '../../images/popcorn.jpg';
+import Logo from '../../images/Logo.jpg';
 
 const Header = () => {
   return (
     <div className="header">
-    <img src={popcorn} alt="Logo" />
+    <img src={Logo} alt="Logo" />
   </div>
   
   
