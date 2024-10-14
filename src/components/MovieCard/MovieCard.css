@@ -22,7 +22,7 @@ img {
 
 h2  {
     text-align: center;
-    color: rgb(233, 210, 229);
+    color: rgb(14, 175, 193);
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT Bold", fantasy;
     line-height: 2;
 
@@ -42,7 +42,7 @@ p {
     display:flex;
     justify-content: space-evenly;
     font-family: "Arial Rounded MT Bold", fantasy;
-    color: rgb(70, 67, 69);
+    color: rgb(16, 239, 217);
 
 
 }

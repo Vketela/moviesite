@@ -1,14 +1,43 @@
 
-.header img {
-    width: 1700px;
-    height: 600PX;
-    padding-top: 95px 50px 70px;
-    
+
+   .header {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       background-color: transparent;
+       /* Pas aan naar je voorkeur */
+   }
+
+h1 {
+    font-size: 40px;
+    color: #00ffb7;
+    text-align: center;
 }
 
-.header {
-    background-color: #0f0662;
-    color: #64cfdd;
-    padding: 10px;
-    text-align: center;
+.nav-links {
+    list-style: none;
+    /* Verwijdert opsommingstekens */
+    display: flex;
+    /* Zorgt dat de items naast elkaar komen te staan */
+    position:absolute;
+    right: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    /* Ruimte tussen de links */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    /* Verwijdert onderstreping van de links */
+    color: white;
+    /* Kleur van de links */
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #00ffff;
+    /* Kleur bij hover (muisklik) */
 }
