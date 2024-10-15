@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Banner.css';
 
-const Banner = () => (
+const Banner = () => {
+  return (
   <div className="banner">
-    <h2>HIER KOMT TEKST</h2>
+    <h2 className="subtitel">Cinema classics</h2>
   </div>
 );
+
+};
 
 Banner.propTypes = {};
 

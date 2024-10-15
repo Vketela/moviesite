@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import MovieCardDeck from "./components/MovieCardDeck/MovieCardDeck";
 import NavBar from './components/NavBar/NavBar';
@@ -9,6 +9,16 @@ import Footer from './components/Footer/Footer';
 import backgroundImage from './images/gradient.jpg';
 
 function App() {
+  const [movies, setMovies] = useState([]);
+
+  const searchMovies = (query) => {
+    console.log('zoek naar: ${query}');
+  };
+
+  const filterMoviesByDecade = (decade) => {
+    console.log('Filteren op decenium: ${decade}');
+  };
+
   return (
     <div 
       className="container-column" 
@@ -25,12 +35,14 @@ function App() {
         
         
         <div className="container-row">
-          <Sidebar></Sidebar>
+          <Sidebar 
+          onSearch={searchMovies}
+          onFilterDecade={filterMoviesByDecade}
+          />
 
           <div className="body-area">
             <MovieCardDeck></MovieCardDeck>
           </div>
-
         </div>
         <Footer></Footer>
       </div>

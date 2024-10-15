@@ -1,12 +1,29 @@
 .Banner {
+    position: relative;
+    padding: 50px 20px;
     font-size: 24px;
     background-color: #e8ef13;
-    color: #75ecd2;
+    color: #edf6f4;
     text-align: center;
     
 }
 
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #000;
+}
+
+.banner .subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #555;
+    /* Zorg dat de ondertitel goed zichtbaar is */
+}
+
 .banner h2 {
-    
-      
+    font-size: 25px;     
+    font-family:monospace;   
+    font-stretch: expanded;
+    color:cornsilk;
 }
