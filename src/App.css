@@ -21,7 +21,7 @@ body {
 
 .body-area {
   display: flex;
-  background-color:rgb(76, 243, 210); 
+  background-color:transparent;
   text-align: center;
   flex-grow: 1;
 }

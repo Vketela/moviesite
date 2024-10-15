@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 import './NavBar.css';
 
 const NavBar = () => (
-  <nav>
+  <div className="Navbar-container"> 
+  <nav className="NavBar">
     <ul className="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#genres">Genres</a></li>
     </ul>
   </nav>
+</div>
     
 );
 
