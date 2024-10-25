@@ -31,8 +31,6 @@ const moviesArray = [
   },
 ]
 
-
-
 const MovieCardDeck = () => (
   <div className="MovieCardDeck">
     {moviesArray.map((movie) => (<MovieCard title={movie.title} genre={movie.genre} rating={movie.rating} description={movie.description}></MovieCard>))}      

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import MovieCardDeck from "./components/MovieCardDeck/MovieCardDeck";
 import NavBar from './components/NavBar/NavBar';
@@ -7,18 +7,11 @@ import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Footer from './components/Footer/Footer';
 import backgroundImage from './images/gradient.jpg';
+import getData from './api/client';
+import MostPopulair from './components/MostPopulair/MostPopulair';
 
 function App() {
-  const [movies, setMovies] = useState([]);
-
-  const searchMovies = (query) => {
-    console.log('zoek naar: ${query}');
-  };
-
-  const filterMoviesByDecade = (decade) => {
-    console.log('Filteren op decenium: ${decade}');
-  };
-
+ 
   return (
     <div 
       className="container-column" 
@@ -36,18 +29,17 @@ function App() {
         
         <div className="container-row">
           <Sidebar 
-          onSearch={searchMovies}
-          onFilterDecade={filterMoviesByDecade}
+        
           />
 
           <div className="body-area">
             <MovieCardDeck></MovieCardDeck>
+            <MostPopulair></MostPopulair>
           </div>
         </div>
         <Footer></Footer>
       </div>
-      
-  );
+  );  
 }
 
 export default App;
