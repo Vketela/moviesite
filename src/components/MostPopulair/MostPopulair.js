@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './MostPopulair.css';
 import getData from '../../api/client';
+import MovieCardDeck from '../MovieCardDeck/MovieCardDeck';
 
 const searchMovies = (query) => {
   console.log('zoek naar: ${query}');
@@ -21,16 +22,20 @@ const MostPopulair = () => {
       setMovies(data.results); 
     }
     loadMovies() 
-  })
+
+  },[])
 
 
 
   return <div className="MostPopulair">
-    <hi>Populaire films</hi>
+    <h1>Populaire films</h1>
+    <MovieCardDeck moviesArray={movies}></MovieCardDeck>
     <div className='movie-grid'>
     </div>
   </div>
 }
+
+
 
 MostPopulair.propTypes = {};
 

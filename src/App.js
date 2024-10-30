@@ -11,7 +11,7 @@ import getData from './api/client';
 import MostPopulair from './components/MostPopulair/MostPopulair';
 
 function App() {
- 
+    
   return (
     <div 
       className="container-column" 
