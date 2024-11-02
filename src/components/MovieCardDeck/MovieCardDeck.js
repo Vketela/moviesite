@@ -5,7 +5,7 @@ import MovieCard from "../MovieCard/MovieCard";
 
 const MovieCardDeck = ({moviesArray = []}) => (
   <div className="MovieCardDeck">
-    {moviesArray.map((movie) => (<MovieCard key={movie.title} title={movie.title} genre={movie.genre} rating={movie.vote_average} description={movie.overview}></MovieCard>))}      
+    {moviesArray.map((movie) => (<MovieCard key={movie.title} title={movie.title} genre={movie.genre} rating={movie.vote_average} description={movie.overview} imageUrl={movie.poster_path}></MovieCard>))}      
     
 
   </div>

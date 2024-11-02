@@ -2,12 +2,13 @@
 
     flex-direction: row;
     width: 250px;
-    padding: 20px;
+    padding: 40px 40px 40px 40px;
     background-color: #1a1a1a;
-    color: white;
+    color: rgb(151, 22, 22);
     height: 100vh;
-    background-color: transparent;
+    background-color:transparent;
     text-align: center;   
+    margin: 0 0 0 20px;
 }
 
 .sidebar h2 {

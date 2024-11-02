@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MovieCard.css';
 
-const MovieCard = ({title, rating, genre, description}) => (
+const MovieCard = ({title, rating, genre, description, imageUrl}) => (
     <div className="card">
         <div className="card-image">
-            <img src={require("../../images/video.jpg")} alt="video"/>
+            <img src={("https://image.tmdb.org/t/p/w500" + imageUrl)} alt="video"/>
 
         </div>
         <div className="card-text">

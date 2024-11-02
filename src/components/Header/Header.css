@@ -1,22 +1,60 @@
 .header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     background-color: transparent;
-    /* Pas aan naar je voorkeur */
+   justify-content: space-between;
 }
 
 .header h1 {
-    font-size: 50px;
+    font-size: 85px;
     color: #def4f5;
     text-align: center;
-    font-family: fantasy;
-    letter-spacing: 2px;
+    font-family: poppins;
+    letter-spacing: 10px;
+    margin:0;
 }
 
-header .subtitle {
-    font-size: 1.5rem;
-    margin: 0;
+img {
+
+    width: 320px;
+    
+}
+.column-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+   
+}
+
+.search-form {
+    display: inline-block;
+    /* Houd het formulier op één lijn */
+}
+
+.search-input {
+    padding: 30px;
+    width: 500px;
+    /* Breedte van de zoekbalk */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    /* Ronde hoeken */
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #007bff;
+    /* Blauwe knop */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    /* Ronde hoeken */
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    /* Donkerdere kleur bij hover */
 }
 

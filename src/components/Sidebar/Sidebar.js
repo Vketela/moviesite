@@ -19,22 +19,18 @@ const [searchTerm, setSearchTerm] = useState('');
 
   return (
   <div className="Sidebar box">
-    <h2>zoek films</h2>
-    <input 
-    type="text" 
-    className="search-bar"
-    placeholder="zoek een film"
-    value={searchTerm}
-    onChange={handelSearch}
-  />
+    
+  
 
-      <h2>Filter op decennium</h2>
+      <h2>zoek Genre</h2>
       <div className="decade-filters">
-        <button onClick={() => handleDecadeFilter('1950')}>50's</button>
-        <button onClick={() => handleDecadeFilter('1960')}>60's</button>
-        <button onClick={() => handleDecadeFilter('1970')}>70's</button>
-        <button onClick={() => handleDecadeFilter('1980')}>80's</button>
-        <button onClick={() => handleDecadeFilter('1990')}>90's</button>
+        <button onClick={() => handleDecadeFilter('1960')}>Action</button>
+        <button onClick={() => handleDecadeFilter('1970')}>Adventure</button>
+        <button onClick={() => handleDecadeFilter('1980')}>Animation</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Biography</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Comedy</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Crime</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Drama</button>
       </div>
       </div>
     ); 

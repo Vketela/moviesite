@@ -8,23 +8,28 @@ body {
 .container-column {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  height: 100%
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #302f2a, #87CEEB);
+  background-size: cover;
+  background-position: center;
+  
   
 }
 
+
 .container-row {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   flex-grow: 1;
 }
 
 .body-area {
   display: flex;
-  background-color:transparent;
+  background-color:none;
   text-align: center;
   flex-grow: 1;
 }
+
 
 
 
