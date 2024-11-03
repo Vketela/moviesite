@@ -15,11 +15,11 @@ const Header = () => {
           <input
             type="text"
             name="query"
-            placeholder="Zoek een film..."
+            placeholder="Zoeken naar een film"
             required
             className="search-input"
           />
-          <button type="submit" className="search-button">Zoeken</button>
+          <button type="submit" className="search-button">search</button>
         </form>
       </div>
       <Banner /> {/* Zorg ervoor dat de Banner ook wordt weergegeven */}

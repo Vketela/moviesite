@@ -22,7 +22,7 @@ const [searchTerm, setSearchTerm] = useState('');
     
   
 
-      <h2>zoek Genre</h2>
+      <h2>Kies Genre</h2>
       <div className="decade-filters">
         <button onClick={() => handleDecadeFilter('1960')}>Action</button>
         <button onClick={() => handleDecadeFilter('1970')}>Adventure</button>

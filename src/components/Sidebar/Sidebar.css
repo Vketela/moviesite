@@ -13,26 +13,28 @@
 
 .sidebar h2 {
     margin-bottom: 10px; 
+    font-size: medium;
 }
 
 .sidebar input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .decade-filters button {
     display: block;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 40px;
+    margin-bottom: 20px;
     background-color: #6ad0dc;
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 3px;
+    font-size: large;
 }
 
 .decade-filters button:hover {

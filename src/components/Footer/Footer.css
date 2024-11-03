@@ -1,6 +1,5 @@
 .Footer {
-    background-color:transparent;
-    color: #38e8e7;
+    background-color:  transparent;
     text-align: center;
     position: relative;
     left: 50%;
@@ -10,7 +9,7 @@
     height: auto;
     margin: 0;
     padding: 20px;
-    font-size: 15px;
+    font-size: 20px;
     box-sizing: border-box;
 }
 .Footer {
