@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #302f2a, #87CEEB);
+  background: linear-gradient(to bottom, #022141, #2d5dab);
   background-size: cover;
   background-position: center;
   

@@ -29,7 +29,7 @@
     width: 100%;
     padding: 40px;
     margin-bottom: 20px;
-    background-color: #6ad0dc;
+    background-color: #043168;
     border: none;
     color: white;
     cursor: pointer;
@@ -38,7 +38,7 @@
 }
 
 .decade-filters button:hover {
-    background-color: #555;
+    background-color: #60b5e6;
 
 }
    
