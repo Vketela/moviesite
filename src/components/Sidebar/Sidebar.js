@@ -21,8 +21,13 @@ const [searchTerm, setSearchTerm] = useState('');
   <div className="Sidebar box">
     
   
-
-      <h2>Kies Genre</h2>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h2>Kies Genre</h2> 
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="decade-filters">
         <button onClick={() => handleDecadeFilter('1960')}>Action</button>
         <button onClick={() => handleDecadeFilter('1970')}>Adventure</button>
@@ -31,6 +36,15 @@ const [searchTerm, setSearchTerm] = useState('');
         <button onClick={() => handleDecadeFilter('1990')}>Comedy</button>
         <button onClick={() => handleDecadeFilter('1990')}>Crime</button>
         <button onClick={() => handleDecadeFilter('1990')}>Drama</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Family</button>
+        <button onClick={() => handleDecadeFilter('1990')}>History</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Horror</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Romantic</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Science Fiction</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Thriller</button>
+        <button onClick={() => handleDecadeFilter('1990')}>War</button>
+        <button onClick={() => handleDecadeFilter('1990')}>Western</button>
+
       </div>
       </div>
     ); 

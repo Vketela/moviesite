@@ -6,13 +6,13 @@ import popcornbeker from '../../images/popcornbeker.png';
 import filmhero from '../../images/filmhero.jpg';
 
 
+
 const Header = () => {
   return (
     <div style={{ backgroundImage: `url(${filmhero})` }} className="header">
-
-
       <h1 className='filmhero'>POPCORN</h1>
       <h2>Ontdek en kijk naar je favoriete films!</h2>
+      
 
 
       <img src={popcornbeker} alt="Popcorn Beker" />
