@@ -24,7 +24,7 @@ const [searchTerm, setSearchTerm] = useState('');
       <br></br>
       <br></br>
       <br></br>
-      <h2>Kies Genre</h2> 
+      <h2>Search by genre</h2> 
       <br></br>
       <br></br>
       <br></br>

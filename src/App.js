@@ -1,40 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import MovieCardDeck from "./components/MovieCardDeck/MovieCardDeck";
-import NavBar from './components/NavBar/NavBar';
-import Banner from './components/Banner/Banner';
-import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
-import Footer from './components/Footer/Footer';
-import getData from './api/client';
-import MostPopulair from './components/MostPopulair/MostPopulair';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Login from './pages/Login/Login';
+import Landing from './pages/Landing/Landing';
 
 
 
 function App() {
-    
-  return (
-    <div 
-      className="container-column" 
-      > 
-        <Header></Header>
-        <NavBar></NavBar>
-        <Banner></Banner>
-        
-        
-        <div className="container-row">
-          <Sidebar 
-        
-          />
 
-          <div className="body-area">
-            <MovieCardDeck></MovieCardDeck>
-            <MostPopulair></MostPopulair>
-          </div>
-        </div>
-        <Footer></Footer>
-      </div>
-  );  
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />  
+        
+        <Route path="/landing" element={<Landing/>} />
+      </Routes>
+
+    </BrowserRouter>
+  );
 }
 
 export default App;

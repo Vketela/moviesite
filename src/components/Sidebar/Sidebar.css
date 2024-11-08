@@ -13,7 +13,7 @@
 
 .sidebar h2 {
     margin-bottom: 10px; 
-    font-size: small;
+    font-size:x-small;
     padding-bottom: 10px;
     margin: 10px;
 }
@@ -32,11 +32,10 @@
     padding: 15px;
     margin-bottom:15px;
     background-color: #082242;
-    border: none;
+    border: white;
     color: white;
     cursor: pointer;
     border-radius: 20px;
-    border: white;
     font-size: large;
 }
 
