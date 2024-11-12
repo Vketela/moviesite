@@ -18,7 +18,7 @@ const MostPopulair = () => {
   useEffect(() => {
 
     async function loadMovies() {
-      const data = await getData("/movie/popular");
+      const data = await getData("/movie/popular?");
       setMovies(data.results); 
     }
     loadMovies() 

@@ -72,3 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 npx generate-react-cli component MyComponent - vervang 'MyComponent' met naam van component die je wil maken
 
 https://image.tmdb.org/t/p/w500/63xYQj1BwRFielxsBDXvHIJyXVm.jpg "imagebase
+
+search/movie?query=
