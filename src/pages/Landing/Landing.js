@@ -7,6 +7,9 @@ import Footer from '../../components/Footer/Footer';
 import MostPopulair from '../../components/MostPopulair/MostPopulair';
 import './Landing.css';
 import Header from '../../components/Header/Header';
+import Search from '../../components/search/search';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+
 
 function Landing() {
   return ( 
@@ -23,8 +26,9 @@ function Landing() {
       />
 
       <div className="body-area">
-        <MovieCardDeck></MovieCardDeck>
-        <MostPopulair></MostPopulair>
+        {/* <MostPopulair></MostPopulair> */}
+        {/* <Search></Search> */}
+          <Outlet></Outlet>
       </div>
     </div>
     <Footer></Footer>

@@ -7,7 +7,6 @@ import filmhero from '../../images/filmhero.jpg';
 import getData from '../../api/client';
 
 
-
 const Header = () => {
   const [search, setSearch] = useState("")
 

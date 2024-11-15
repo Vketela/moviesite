@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import Landing from './pages/Landing/Landing';
+import Search from './components/search/search';
+import MostPopulair from './components/MostPopulair/MostPopulair';
 
 
 
@@ -24,9 +26,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />  
-        
-        <Route path="/landing" element={<Landing/>} />
+        <Route path="/" element={<Login />} />
+
+        <Route path="/landing" element={<Landing />}  >
+          <Route path="search" element={<Search />} />
+
+          <Route path="mostpopulair" element={<MostPopulair />} />
+          <Route path="" element={<MostPopulair />} />
+
+        </Route>
       </Routes>
 
     </BrowserRouter>

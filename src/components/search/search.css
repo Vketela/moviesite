@@ -1,0 +1,52 @@
+.search {
+    text-align: center;
+    margin: 20px;
+}
+
+.search input {
+    padding: 10px;
+    width: 90%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+.movie-results {
+    margin-top: 20px;
+}
+
+.movie-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-results li {
+    margin-bottom: 10px;
+}
+
+.movie-results li h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.movie-results li p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}

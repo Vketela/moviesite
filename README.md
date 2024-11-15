@@ -74,3 +74,12 @@ npx generate-react-cli component MyComponent - vervang 'MyComponent' met naam va
 https://image.tmdb.org/t/p/w500/63xYQj1BwRFielxsBDXvHIJyXVm.jpg "imagebase
 
 search/movie?query=
+
+Your X-Api-Key: popcornmovieflix:2rMriPBJ7MV5I6hlegSt
+
+Add the following to the header of your POST USER request:
+
+Headers: {
+    'Content-Type': 'application/json',
+    'X-Api-Key':popcornmovieflix:2rMriPBJ7MV5I6hlegSt
+}
