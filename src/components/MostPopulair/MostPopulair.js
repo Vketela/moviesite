@@ -8,8 +8,8 @@ const searchMovies = (query) => {
   console.log('zoek naar: ${query}');
 };
 
-const filterMoviesByDecade = (decade) => {
-  console.log('Filteren op decenium: ${decade}');
+const filterMoviesByGenre = (genre) => {
+  console.log('Filteren op genre: ${genre}');
 };
 
 const MostPopulair = () => {

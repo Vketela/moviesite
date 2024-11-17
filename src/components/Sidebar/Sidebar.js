@@ -1,54 +1,54 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import GenreSearch from '../search/GenreSearch';
 import './Sidebar.css';
 
-const Sidebar = ({ onSearch, onFilterDecade }) => {
-const [searchTerm, setSearchTerm] = useState('');
+const Sidebar = ({ onSearch, onFilterGenre }) => {
+  const [searchTerm, setSearchTerm] = useState('');
 
-  // Functie om de zoekterm bij te werlken terwij de gebruiker typt
+  // Functie om de zoekterm bij te werken terwijl de gebruiker typt
   const handelSearch = (event) => {
     setSearchTerm(event.target.value); //update search term in state
     onSearch(event.target.value) // roep de functie aan om te zoeken in
   };
 
 
-  // Functie om te filteren op decenium
-  const handleDecadeFilter = (decade) => {
-    onFilterDecade(decade); //roept de functie aan om films te filteren in 
+  // Functie om te filteren op genre
+  const handleGenreFilter = (genre) => {
+    onFilterGenre(genre); //roept de functie aan om films te filteren in 
   }
 
   return (
-  <div className="Sidebar box">
-    
-  
+    <div className="Sidebar box">
+
       <br></br>
       <br></br>
       <br></br>
-      <h2>Search by genre</h2> 
+      <h2>Search by genre</h2>
       <br></br>
       <br></br>
       <br></br>
-      <div className="decade-filters">
-        <button onClick={() => handleDecadeFilter('1960')}>Action</button>
-        <button onClick={() => handleDecadeFilter('1970')}>Adventure</button>
-        <button onClick={() => handleDecadeFilter('1980')}>Animation</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Biography</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Comedy</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Crime</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Drama</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Family</button>
-        <button onClick={() => handleDecadeFilter('1990')}>History</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Horror</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Romantic</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Science Fiction</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Thriller</button>
-        <button onClick={() => handleDecadeFilter('1990')}>War</button>
-        <button onClick={() => handleDecadeFilter('1990')}>Western</button>
+      <div className="genre-filters">
+        <button onClick={() => handleGenreFilter('action')}>Action</button>
+        <button onClick={() => handleGenreFilter('adventure')}>Adventure</button>
+        <button onClick={() => handleGenreFilter('animation')}>Animation</button>
+        <button onClick={() => handleGenreFilter('Biography')}>Biography</button>
+        <button onClick={() => handleGenreFilter('comedy')}>Comedy</button>
+        <button onClick={() => handleGenreFilter('crime')}>Crime</button>
+        <button onClick={() => handleGenreFilter('Drama')}>Drama</button>
+        <button onClick={() => handleGenreFilter('family')}>Family</button>
+        <button onClick={() => handleGenreFilter('history')}>History</button>
+        <button onClick={() => handleGenreFilter('horror')}>Horror</button>
+        <button onClick={() => handleGenreFilter('romantic')}>Romantic</button>
+        <button onClick={() => handleGenreFilter('scienceFiction')}>Science Fiction</button>
+        <button onClick={() => handleGenreFilter('thriller')}>Thriller</button>
+        <button onClick={() => handleGenreFilter('war')}>War</button>
+        <button onClick={() => handleGenreFilter('western')}>Western</button>
 
       </div>
-      </div>
-    ); 
-  };
+    </div>
+  );
+};
 
 Sidebar.propTypes = {};
 
