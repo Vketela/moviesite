@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import GenreSearch from '../search/GenreSearch';
 import './Sidebar.css';
 
 const Sidebar = ({ onSearch, onFilterGenre }) => {

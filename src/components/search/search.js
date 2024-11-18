@@ -34,7 +34,7 @@ const Search = ({ apiKey }) => {
 };
 
 Search.propTypes = {
-  apiKey: PropTypes.string.isRequired, // Zorg dat je je API-sleutel doorgeeft als prop
+  apiKey: PropTypes.string.isRequired, 
 };
 
 

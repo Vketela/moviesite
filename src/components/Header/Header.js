@@ -24,17 +24,7 @@ const Header = () => {
       <img src={popcornbeker} alt="Popcorn Beker" />
       <div className="column-wrapper">
         <form action="javascript:void(0)" onSubmit={loadMovies} method="get" className="search-form">
-          <input 
-          value={search}
-          onChange={(event)=> setSearch(event.target.value) } 
-
-            type="text"
-            name="query"
-            placeholder="Zoeken naar een film"
-            required
-            className="search-input"
-          />
-          <button type="submit" className="search-button">search</button>
+          
         </form>
       </div>
     </div>
