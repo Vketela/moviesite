@@ -14,6 +14,10 @@ function App() {
   const handelLogin = () => {
     setIsAuthentcated(true);
     localStorage.setItem("authToken", "testToken");
+    return (
+      <div><Login/> 
+      </div>
+    )
   };
 
   useEffect(() => {
@@ -21,6 +25,8 @@ function App() {
     if (token) {
 
     }
+
+
   }, []);
 
   return (
