@@ -3,25 +3,54 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #def4f5;
+.Login h1 {
+    font-size: 2em;
+    margin-bottom: 22px;
+    color: antiquewhite;
+    font-size: 50px;
+    padding: 25px;
+    text-align: center;
 }
 
-.login-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-img {
-    width: 400px;
-    height: 300%
+.input-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
 
+input {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(194, 238, 248);
+}
+
+img.username {
+    width: 43px;
+    height: 43px;
+}
+
+img.email {
+    width: 43px;
+    height: 43px;
+}
+
+img.password {
+    width: 50px;
+    height: 50px;
 }

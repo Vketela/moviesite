@@ -2,29 +2,24 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
 import filmhero from '../../images/filmhero.jpg';
-import loginIcon from '../../images/login-icon.png';
+import UserIcon from '../../images/User-icon.png';
 import { useNavigate } from 'react-router-dom';
-import emailIcon from '../../images/email.png'
-import passwordIcon from '../../images/password.png'
+import passwordIcon from '../../images/password-icon.png'
+import SignupIcon from '../../images/signup-icon.png';
+
+
 
 const Login = ({ }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('')
   const [error, setError] = useState('');
   //toegevoegd//
   const [isRegistering, setIsRegistering] = useState(false);
   const navigate = useNavigate();
-  const registerCredentials = {
-    username: username,
-    email: email,
-    password: password,
-    info: '',
-    authorities: [
-      {
-        authority: "USER"
-      }]
-  }
+  const handleSignupClick = () => {
+    navigate('/Signup')
+  };
+
 
   const handleLoginClick = async (event) => {
     event.preventDefault();
@@ -38,7 +33,7 @@ const Login = ({ }) => {
           'Content-Type': 'application/json',
           'X-Api-Key': 'popcornmovieflix:2rMriPBJ7MV5I6hlegSt'
         },
-        body: JSON.stringify({username, password}),
+        body: JSON.stringify({ username, password }),
       });
 
       if (response.ok) {
@@ -59,72 +54,64 @@ const Login = ({ }) => {
     }
   };
 
-  const handleRegisterClick = async (event) => {
-    event.preventDefault();
-    console.log('User clicked the register icon')
-
-    try {
-      // API-aanroep naar de backend van NOVI
-      const response = await fetch('https://api.datavortex.nl/popcornmovieflix/users', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Api-Key': 'popcornmovieflix:2rMriPBJ7MV5I6hlegSt'
-        },
-        body: JSON.stringify(registerCredentials),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        alert("sign up succeful")
-      } else {
-        alert("sign up not succesful")
-
-
-        const errorData = await response.json();
-        setError(errorData.message || 'Invalid credentials');
-      }
-    } catch (err) {
-      setError('An error occurred. Please check your network and try again.');
-    }
-  };
 
   return (
     <div className="Login" style={{ backgroundImage: `url(${filmhero})` }} >
       <h1>Welcome to Popcorn!</h1>
-      <img
-        src={loginIcon}
-        alt="Login Icon"
-        className="login-icon"
-        onClick={handleLoginClick}
-        style={{ cursor: 'pointer' }} />
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="pasword"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <img
-        src={loginIcon}
-        alt="Login Icon"
-        className="login-icon"
-        onClick={handleRegisterClick}
-        style={{ cursor: 'pointer' }} />
+
+
+      <div className="input-container">
+        <img
+          src={UserIcon}
+          alt="username"
+          className="username"
+          style={{ cursor: 'pointer' }} />
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </div>
+
+
+      <div className="input-container">
+        <img
+          src={passwordIcon}
+          alt="Password"
+          className="password"
+          style={{ cursor: 'pointer' }} />
+        <input
+          type="text"
+          placeholder="pasword"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
+
+      <p>Don't hava an account? Click the icon to Sign up.</p>
+
+
+      <div className="signup-container">
+        <img
+          src={SignupIcon}
+          alt="sign up"
+          className="signup-icon"
+          onClick={handleSignupClick}
+          style={{ cursor: 'pointer' }}
+        />
+
+        <img
+          src={username}
+          alt="username"
+          className="username"
+          onClick={handleLoginClick}
+          style={{ cursor: 'pointer' }} />
+      </div>
     </div>
   );
-};
+}
+
 
 
 Login.propTypes = {

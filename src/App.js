@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login/Login';
+
 import Landing from './pages/Landing/Landing';
 import Search from './components/search/search';
 import MostPopulair from './components/MostPopulair/MostPopulair';
-
-
+import Signup from './pages/Signup/Signup';
 
 function App() {
   const [isAuthenticated, setIsAuthentcated] = useState(false);
@@ -25,14 +25,14 @@ function App() {
     if (token) {
 
     }
-
-
   }, []);
 
   return (
+
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
 
         <Route path="/landing" element={<Landing />}  >
           <Route path="search" element={<Search />} />
