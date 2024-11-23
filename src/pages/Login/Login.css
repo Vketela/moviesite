@@ -8,12 +8,34 @@
 }
 
 .Login h1 {
-    font-size: 2em;
+    font-size: 50px;
     margin-bottom: 22px;
     color: antiquewhite;
     font-size: 50px;
     padding: 25px;
     text-align: center;
+}
+
+.signup-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 90px;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 27px;
+    color: antiquewhite;
+}
+
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 35px;
+
 }
 
 .input-container {
@@ -32,7 +54,7 @@
 input {
     padding: 20px;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 100;
     width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -53,4 +75,12 @@ img.email {
 img.password {
     width: 50px;
     height: 50px;
+}
+
+img.signup-icon {
+    height: 120px;
+    width:auto;
+    margin-top: 5px;
+    cursor: pointer;
+    padding-left: 30px;
 }

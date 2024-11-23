@@ -8,7 +8,6 @@ import passwordIcon from '../../images/password-icon.png'
 import SignupIcon from '../../images/signup-icon.png';
 
 
-
 const Login = ({ }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -89,8 +88,9 @@ const Login = ({ }) => {
         />
       </div>
 
-      <p>Don't hava an account? Click the icon to Sign up.</p>
-
+      <div className="signup-section">
+        <p>Don't have an account? Click the icon to Sign up.</p>
+      </div>
 
       <div className="signup-container">
         <img
@@ -100,13 +100,6 @@ const Login = ({ }) => {
           onClick={handleSignupClick}
           style={{ cursor: 'pointer' }}
         />
-
-        <img
-          src={username}
-          alt="username"
-          className="username"
-          onClick={handleLoginClick}
-          style={{ cursor: 'pointer' }} />
       </div>
     </div>
   );
