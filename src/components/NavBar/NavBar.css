@@ -1,29 +1,5 @@
-.Navbar-container {
-    background-color:transparent;
-    color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 70px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height: auto;
-    position:relative;
-    top: 25px;
-    width:100%;
-    z-index: 1000;
-    transition: top 0.35, position 0.35;
-}
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
 .nav-links li {
-    margin-right: 25px;
+    margin: 15px;
 }
 
 .nav-links a {

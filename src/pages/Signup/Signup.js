@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Signup.css';
+import filmhero from '../../images/filmhero.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = ({ }) => {
@@ -55,8 +56,8 @@ const Signup = ({ }) => {
   };
 
   return (
-    <div className="Signup">
-      <h1 className="signup-h1">Create an Account</h1>
+    <div className="Signup" style={{ backgroundImage: `url(${filmhero})` }} >
+      <h1 className="signup-h1">Create Account</h1>
       <div className="input-container">
         <input
           type="text"

@@ -26,13 +26,12 @@ const MostPopulair = () => {
   },[])
 
 
-
   return <div className="MostPopulair">
-    <h1>Populaire films</h1>
+    <h1>New and most Populair Movies</h1>
     <MovieCardDeck moviesArray={movies}></MovieCardDeck>
-    <div className='movie-grid'>
+    
     </div>
-  </div>
+  
 }
 
 

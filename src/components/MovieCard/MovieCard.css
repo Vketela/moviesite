@@ -1,46 +1,34 @@
 .card {
-    width: 230px;
-    height: 430px;
-    border-style:inset;
-    border-width: 3px;
-    margin: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    overflow: hidden;
-    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    border-style: none;
+    margin: 5px;
+    box-sizing: border-box;
 }
 
-img {
-    width: 102px;
-
+.card img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    object-fit: cover;
 }
 
-img {
-    border-radius: 20px;
-
-}
-
-h2  {
-    text-align: center;
-    color: rgb(14, 175, 193);
-    font-family:Arial, Helvetica, sans-serif;
-
-}
 .meta-info {
     display: flex;
-    justify-content: space-evenly;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#d6f1f3;
-    padding: 10px;
-    border-radius: 5px;
 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(45, 47, 67);
+    padding: 5px 15px;
+    width: calc(100%-40px);
+    box-sizing: border-box;
 }
 
-
 p {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
-    font-family: "Arial Rounded MT Bold", fantasy;
-    color: rgb(16, 239, 217);
-
-
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(238, 248, 247);
+    margin: 0;
+    padding-left: 10px;
 }

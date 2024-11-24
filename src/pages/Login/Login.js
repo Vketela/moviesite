@@ -89,7 +89,7 @@ const Login = ({ }) => {
       </div>
 
       <div className="signup-section">
-        <p>Don't have an account? Click the icon to Sign up.</p>
+        <p>Don't have an account? Click the button to Sign up!</p>
       </div>
 
       <div className="signup-container">
