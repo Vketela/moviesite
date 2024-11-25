@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
+
 
 
 const Sidebar = ({ onSearch, onFilterGenre }) => {
@@ -20,21 +22,21 @@ const Sidebar = ({ onSearch, onFilterGenre }) => {
     <div className="Sidebar-container">
       <nav className="sidebar">
         <ul className="sidebar-main-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="#movies">Movies</a></li>
-          <li><a href="#series">Series</a></li>
-          <li><a href="#my-list">My list</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/movies">Movies</Link></li>
+          <li><Link to="/series">Series</Link></li>
+          <li><Link to="/my-list">My list</Link></li>
         </ul>
         <hr />
       </nav>
-      </div>
+    </div>
   );
 };
-      
-      
+
+
 Sidebar.propTypes = {
-  onSearch: PropTypes.func.isRequired,      // `onSearch` is verplicht en moet een functie zijn
-  onFilterGenre: PropTypes.func.isRequired, // `onFilterGenre` is verplicht en moet een functie zijn
+  onSearch: PropTypes.func.isRequired,
+  onFilterGenre: PropTypes.func.isRequired,
 };
 
 // DefaultProps definitie

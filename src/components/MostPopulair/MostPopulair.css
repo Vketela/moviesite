@@ -9,9 +9,10 @@
 
 .MostPopulair h1 {
     color: #eae5e4;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card {

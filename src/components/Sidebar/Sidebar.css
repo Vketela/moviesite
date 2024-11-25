@@ -1,46 +1,47 @@
-.Sidebar {
-
-    flex-direction: row;
-    width: 200px;
-    padding: 25px;
-    background-color: #1a1a1a;
-    color: rgb(151, 22, 22);
-    height: 100vh;
-    background-color:transparent;
-    text-align: center;   
-    margin: 10 10 20px;
-}
-
-.sidebar h2 {
-    margin-bottom: 10px; 
-    font-size:x-small;
-    padding-bottom: 10px;
-    margin: 10px;
-}
-
-.sidebar input {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: none;
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 210px;
+    padding: 18px;
+    background-color:#19589c;
+    color: antiquewhite;
+    height: calc(100vh - 50px);
+    text-align: center;
+    margin: 137px 15px;
+    position: relative;
     border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 50px 70px rgba(03, 4, 0, 0.2);;
 }
 
-.decade-filters button {
+.sidebar-main-menu {
+    list-style-type: none;
+    padding: 20px;  
+    margin-top: 47%;
+    text-align: left;
+}
+
+.sidebar-main-menu li {
+    margin: 30px 0;
+}
+
+.sidebar-main-menu li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 18px;
     display: block;
-    width: 100%;
-    padding: 15px;
-    margin-bottom:15px;
-    background-color: #082242;
-    border: white;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: large;
+    padding: 20px 27px;
+    border-radius: 8px;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #2a2a2a;
+    box-shadow: 0 20px 8px rgba(03, 4, 0, 0.2);
+    transition: backgroun-color 0.35 ease, color 035 ease, text-decoration 0.35 ease;
 }
 
-.decade-filters button:hover {
-    background-color: #60b5e6;
-
+idebar-main-menu li a:hover {
+    background-color: #3e3e3e;
+    color: #e50914;
 }
-   
+    
