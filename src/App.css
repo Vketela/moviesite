@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction:row;
   flex-grow: 1;
+  gap: 70px;
 }
 
 .body-area {
