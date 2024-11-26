@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import './search.css';
@@ -8,6 +8,10 @@ import getData from '../../api/client';
 const Search = ({ apiKey }) => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
+  const [genres, setGenres] = useState([]);
+  const [selectedgenre, setSelecteGenre] = useState(null);
+
+  
 
   const handleSearch = async (e) => {
     e.preventDefault(); // Zorgt ervoor dat het formulier niet opnieuw laadt.
@@ -16,6 +20,7 @@ const Search = ({ apiKey }) => {
     const data = await getData("/search/movie?query=" + query + "&");
     setMovies(data.results || []);
   };
+ 
 
   return (
     <div className="search">
@@ -34,7 +39,7 @@ const Search = ({ apiKey }) => {
 };
 
 Search.propTypes = {
-  apiKey: PropTypes.string.isRequired, 
+  apiKey: PropTypes.string.isRequired,
 };
 
 

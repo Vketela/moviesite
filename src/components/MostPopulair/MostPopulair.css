@@ -15,22 +15,3 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.card {
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    border: none;
-    overflow: hidden;
-    border-radius: 5px;  
-    
-}
-
-card img {
-    width: 100%;
-    height:auto;
-    border-radius: 10px;
-}
-
-.card.rating {
-    display: none;
-}

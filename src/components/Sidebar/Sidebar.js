@@ -22,10 +22,10 @@ const Sidebar = ({ onSearch, onFilterGenre }) => {
     <div className="Sidebar-container">
       <nav className="sidebar">
         <ul className="sidebar-main-menu">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/landing">Home</Link></li>
           <li><Link to="/movies">Movies</Link></li>
           <li><Link to="/series">Series</Link></li>
-          <li><Link to="/my-list">My list</Link></li>
+          <li><Link to="/landing/mylist">My list</Link></li>
         </ul>
         <hr />
       </nav>

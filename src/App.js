@@ -7,6 +7,7 @@ import Landing from './pages/Landing/Landing';
 import Search from './components/search/search';
 import MostPopulair from './components/MostPopulair/MostPopulair';
 import Signup from './pages/Signup/Signup';
+import Mylist from './pages/Mylist/Mylist';
 
 function App() {
   const [isAuthenticated, setIsAuthentcated] = useState(false);
@@ -39,6 +40,9 @@ function App() {
 
           <Route path="mostpopulair" element={<MostPopulair />} />
           <Route path="" element={<MostPopulair />} />
+
+          <Route path="mylist" element={<Mylist />} />
+          
 
         </Route>
       </Routes>

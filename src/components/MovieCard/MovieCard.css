@@ -4,6 +4,7 @@
     border-style: none;
     margin: 2px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .card img {
@@ -31,4 +32,11 @@ p {
     color:rgb(238, 248, 247);
     margin: 0;
     padding-left: 10px;
+}
+
+.card-fav {
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+
 }
