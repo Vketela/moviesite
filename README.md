@@ -83,3 +83,44 @@ Headers: {
     'Content-Type': 'application/json',
     'X-Api-Key':popcornmovieflix:2rMriPBJ7MV5I6hlegSt
 }
+
+# Movie App
+
+## Projectoverzicht
+Deze applicatie stelt gebruikers in staat om films op te slaan als favorieten, films te zoeken op titel en genre, en hun persoonlijke voorkeuren te beheren. De frontend is ontwikkeld met React en maakt gebruik van de TMDB API om filmdata op te halen.
+
+## Vereisten
+- Node.js (v14.0 of hoger)
+- npm (v6.0 of hoger)
+
+## Installatie
+1. Clone het project naar je lokale machine:
+git clone https://github.com/gebruikersnaam/movie-app.git
+
+2. Navigeer naar de projectmap:
+3. Installeer de benodigde afhankelijkheden:
+4. Start de applicatie:
+
+
+## Configuratie van de API
+Om de applicatie correct te laten werken, moet je de API-sleutel van TMDB instellen.
+
+1. Maak een `.env` bestand aan in de root van het project.
+2. Voeg de volgende regel toe met je API-sleutel:
+REACT_APP_TMDB_API_KEY=je-api-sleutel-hier
+
+
+## Gebruik
+- **Login**: Maak een account aan om je favoriete films op te slaan.
+- **Film zoeken**: Gebruik de zoekfunctie om films op titel te vinden.
+- **Genres**: Klik op een genre om films te filteren (let op, de filtering is momenteel niet gekoppeld aan de backend).
+
+## Problemen en Oplossingen
+- Als de applicatie niet werkt, zorg er dan voor dat je Node.js en npm goed geïnstalleerd hebt.
+- Vergeet niet je API-sleutel in het `.env` bestand in te vullen.
+
+## Toekomstige verbeteringen
+- Backend-integratie voor werkende genre-filtering.
+- Verbeterde zoekfunctionaliteit en gebruikersauthenticatie.
+
+

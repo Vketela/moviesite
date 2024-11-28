@@ -11,8 +11,6 @@ const Search = ({ apiKey }) => {
   const [genres, setGenres] = useState([]);
   const [selectedgenre, setSelecteGenre] = useState(null);
 
-  
-
   const handleSearch = async (e) => {
     e.preventDefault(); // Zorgt ervoor dat het formulier niet opnieuw laadt.
     if (query.trim() === '') return;
@@ -20,7 +18,6 @@ const Search = ({ apiKey }) => {
     const data = await getData("/search/movie?query=" + query + "&");
     setMovies(data.results || []);
   };
- 
 
   return (
     <div className="search">
