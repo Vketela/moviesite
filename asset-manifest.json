@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.aec83fae.css",
-    "main.js": "/static/js/main.76b21091.js",
-    "static/js/453.965acef8.chunk.js": "/static/js/453.965acef8.chunk.js",
-    "static/media/filmhero.jpg": "/static/media/filmhero.fd1b7fcad36134aca132.jpg",
-    "static/media/password-icon.png": "/static/media/password-icon.6eabafe47adf1eaaff11.png",
-    "static/media/User-icon.png": "/static/media/User-icon.228750f9066b92de8178.png",
-    "static/media/popcornbeker.png": "/static/media/popcornbeker.d74a9ee2c2121af9d111.png",
-    "index.html": "/index.html",
-    "main.aec83fae.css.map": "/static/css/main.aec83fae.css.map",
-    "main.76b21091.js.map": "/static/js/main.76b21091.js.map",
-    "453.965acef8.chunk.js.map": "/static/js/453.965acef8.chunk.js.map"
+    "main.css": "/moviesite/static/css/main.aec83fae.css",
+    "main.js": "/moviesite/static/js/main.20cffee9.js",
+    "static/js/453.965acef8.chunk.js": "/moviesite/static/js/453.965acef8.chunk.js",
+    "static/media/filmhero.jpg": "/moviesite/static/media/filmhero.fd1b7fcad36134aca132.jpg",
+    "static/media/password-icon.png": "/moviesite/static/media/password-icon.6eabafe47adf1eaaff11.png",
+    "static/media/User-icon.png": "/moviesite/static/media/User-icon.228750f9066b92de8178.png",
+    "static/media/popcornbeker.png": "/moviesite/static/media/popcornbeker.d74a9ee2c2121af9d111.png",
+    "index.html": "/moviesite/index.html",
+    "main.aec83fae.css.map": "/moviesite/static/css/main.aec83fae.css.map",
+    "main.20cffee9.js.map": "/moviesite/static/js/main.20cffee9.js.map",
+    "453.965acef8.chunk.js.map": "/moviesite/static/js/453.965acef8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aec83fae.css",
-    "static/js/main.76b21091.js"
+    "static/js/main.20cffee9.js"
   ]
 }
