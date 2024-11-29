@@ -1,3 +1,48 @@
+# Movie App - by Vanessa Ketelaar 
+
+## Projectoverzicht
+Deze applicatie stelt gebruikers in staat om films op te slaan als favorieten, films te zoeken op titel en genre, en hun persoonlijke voorkeuren te beheren. De frontend is ontwikkeld met React 
+en maakt gebruik van de TMDB API om filmdata op te halen.
+
+## Vereisten
+- Node.js (v14.0 of hoger)
+- npm (v6.0 of hoger)
+
+## Installatie
+1. Clone het project naar je lokale machine:
+git clone https://github.com/gebruikersnaam/movie-app.git
+
+2. Navigeer naar de projectmap:
+3. Installeer de benodigde afhankelijkheden:
+4. Start de applicatie:
+
+
+## Configuratie van de API
+Om de applicatie correct te laten werken, moet je de API-sleutel van TMDB instellen.
+
+1.  bestand aan in de root van het project.
+2. Voeg de volgende regel toe met je API-sleutel:
+REACT_APP_TMDB_API_KEY=je-api-sleutel-hier
+
+
+## Gebruik
+- **Login**: Maak een account aan om je favoriete films op te slaan.
+- **Film zoeken**: Gebruik de zoekfunctie om films op titel te vinden.
+- **Genres**: Klik op een genre om films te filteren (let op, de filtering is momenteel niet gekoppeld aan de backend).
+
+## Problemen en Oplossingen
+- Als de applicatie niet werkt, zorg er dan voor dat je Node.js en npm goed geïnstalleerd hebt.
+- Vergeet niet je API-sleutel in het `.env` bestand in te vullen.
+
+## Toekomstige verbeteringen
+- Backend-integratie voor werkende genre-filtering.
+- Verbeterde zoekfunctionaliteit en gebruikersauthenticatie.
+
+
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -35,9 +80,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands 
+except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this 
+tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -84,43 +131,4 @@ Headers: {
     'X-Api-Key':popcornmovieflix:2rMriPBJ7MV5I6hlegSt
 }
 
-# Movie App
-
-## Projectoverzicht
-Deze applicatie stelt gebruikers in staat om films op te slaan als favorieten, films te zoeken op titel en genre, en hun persoonlijke voorkeuren te beheren. De frontend is ontwikkeld met React en maakt gebruik van de TMDB API om filmdata op te halen.
-
-## Vereisten
-- Node.js (v14.0 of hoger)
-- npm (v6.0 of hoger)
-
-## Installatie
-1. Clone het project naar je lokale machine:
-git clone https://github.com/gebruikersnaam/movie-app.git
-
-2. Navigeer naar de projectmap:
-3. Installeer de benodigde afhankelijkheden:
-4. Start de applicatie:
-
-
-## Configuratie van de API
-Om de applicatie correct te laten werken, moet je de API-sleutel van TMDB instellen.
-
-1. Maak een `.env` bestand aan in de root van het project.
-2. Voeg de volgende regel toe met je API-sleutel:
-REACT_APP_TMDB_API_KEY=je-api-sleutel-hier
-
-
-## Gebruik
-- **Login**: Maak een account aan om je favoriete films op te slaan.
-- **Film zoeken**: Gebruik de zoekfunctie om films op titel te vinden.
-- **Genres**: Klik op een genre om films te filteren (let op, de filtering is momenteel niet gekoppeld aan de backend).
-
-## Problemen en Oplossingen
-- Als de applicatie niet werkt, zorg er dan voor dat je Node.js en npm goed geïnstalleerd hebt.
-- Vergeet niet je API-sleutel in het `.env` bestand in te vullen.
-
-## Toekomstige verbeteringen
-- Backend-integratie voor werkende genre-filtering.
-- Verbeterde zoekfunctionaliteit en gebruikersauthenticatie.
-
-
+       

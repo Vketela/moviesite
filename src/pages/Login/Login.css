@@ -8,11 +8,11 @@
 }
 
 .Login h1 {
-    font-size: 50px;
-    margin-bottom: 22px;
+    font-size: 55px;
+    margin-bottom: 18px;
     color: antiquewhite;
     font-size: 50px;
-    padding: 25px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -20,40 +20,39 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
-    padding-left: 90px;
+    margin-top: 12px;
+    padding-left: 80px;
     background-color: transparent;
     border-radius: 8px;
-    font-size: 27px;
+    font-size: 30px;
     color: antiquewhite;
 }
-
 
 .signup-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-    padding-left: 35px;
-
+    margin-top: 17px;
+    margin-bottom: 19px;
+    padding-left: 40px;
 }
 
 .input-container {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .input-container img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 20px;
     cursor: pointer;
 }
 
 input {
-    padding: 20px;
-    font-size: 1em;
+    padding: 15px 20px;
+    font-size: 1.2em;
     font-weight: 100;
     width: 250px;
     border: 1px solid #ccc;
@@ -63,23 +62,18 @@ input {
 }
 
 img.username {
-    width: 50px;
-    height: 50px;
-}
-
-img.email {
-    width: 43px;
-    height: 43px;
+    width: 51px;
+    height: 51px;
 }
 
 img.password {
-    width: 50px;
-    height: 50px;
+    width: 51px;
+    height: 51px;
 }
 
 img.signup-icon {
-    height: 120px;
-    width:auto;
+    height: 90px;
+    width: auto;
     margin-top: 5px;
     cursor: pointer;
     padding-left: 30px;

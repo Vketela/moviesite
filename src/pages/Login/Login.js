@@ -45,19 +45,18 @@ const Login = ({ }) => {
           setError('Login failed. Please try again.');
         }
       } else {
-        const errorData = await response.json();
+        const errorData = await response.text();
         setError(errorData.message || 'Invalid credentials');
+        alert("sign up not succesful " + errorData)
       }
     } catch (err) {
       setError('An error occurred. Please check your network and try again.');
     }
   };
 
-
   return (
     <div className="Login" style={{ backgroundImage: `url(${filmhero})` }} >
       <h1>Welcome to Popcorn!</h1>
-
 
       <div className="input-container">
         <img
@@ -73,7 +72,6 @@ const Login = ({ }) => {
         />
       </div>
 
-
       <div className="input-container">
         <img
           src={passwordIcon}
@@ -81,15 +79,15 @@ const Login = ({ }) => {
           className="password"
           style={{ cursor: 'pointer' }} />
         <input
-          type="text"
+          type="password"
           placeholder="pasword"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-
+      <button onClick={handleLoginClick}>login</button>
       <div className="signup-section">
-        <p>Don't have an account? Click the button to Sign up!</p>
+        <p>Don't have an account? Sign up</p>
       </div>
 
       <div className="signup-container">

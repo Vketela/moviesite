@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './search.css';
 import MovieCardDeck from "../../components/MovieCardDeck/MovieCardDeck";
@@ -8,8 +7,16 @@ import getData from '../../api/client';
 const Search = ({ apiKey }) => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
-  const [genres, setGenres] = useState([]);
-  const [selectedgenre, setSelecteGenre] = useState(null);
+  const [selectedgenre, setSelecteGenre] = useState('');
+
+  const genres = [
+    { name: 'Action', id: 28 },
+    { name: 'Comedy', id: 35 },
+    { name: 'Thriller', id: 53 },
+    { name: 'Horror', id: 27 },
+    { name: 'Romantic', id: 10749 },
+    { name: 'Sci-Fi', id: 878 },
+  ];
 
   const handleSearch = async (e) => {
     e.preventDefault(); // Zorgt ervoor dat het formulier niet opnieuw laadt.
@@ -17,6 +24,16 @@ const Search = ({ apiKey }) => {
 
     const data = await getData("/search/movie?query=" + query + "&");
     setMovies(data.results || []);
+  };
+
+  const handleGenreSelect = async (e) => {
+    const genreId = e.target.value;
+    setSelecteGenre(genreId);
+
+    if (genreId) {
+      const data = await getData(`/discover/movie?with_genres=${genreId}&`);
+      setMovies(data.results || []);
+    }
   };
 
   return (
@@ -30,6 +47,17 @@ const Search = ({ apiKey }) => {
         />
         <button type="submit">Search</button>
       </form>
+      <div className="genre-dropdown">
+        <select value={selectedgenre} onChange={handleGenreSelect}>
+          <option value="">Select Genre</option>
+          {genres.map((genre) => (
+            <option key={genre.id} value={genre.id}>
+              {genre.name}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <MovieCardDeck moviesArray={movies}></MovieCardDeck>
     </div>
   );

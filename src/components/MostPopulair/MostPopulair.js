@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import './MostPopulair.css';
 import getData from '../../api/client';
 import MovieCardDeck from '../MovieCardDeck/MovieCardDeck';
-
-const searchMovies = (query) => {
-  console.log('zoek naar: ${query}');
-};
-
-const filterMoviesByGenre = (genre) => {
-  console.log('Filteren op genre: ${genre}');
-};
 
 const MostPopulair = () => {
   const [movies, setMovies] = useState([]);
@@ -25,15 +16,12 @@ const MostPopulair = () => {
 
   },[])
 
-
   return <div className="MostPopulair">
     <h1>New and most Populair Movies</h1>
     <MovieCardDeck moviesArray={movies}></MovieCardDeck>
     
-    </div>
-  
+    </div>  
 }
-
 
 
 MostPopulair.propTypes = {};

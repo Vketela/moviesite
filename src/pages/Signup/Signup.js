@@ -23,7 +23,7 @@ const Signup = ({ }) => {
         authority: "USER"
       }]
   }
-  
+
   const handleSignupClick = async (event) => {
     event.preventDefault();
     console.log('User clicked the register icon')
@@ -95,4 +95,3 @@ Signup.propTypes = {
 Signup.defaultProps = {};
 
 export default Signup;
-  

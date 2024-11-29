@@ -4,25 +4,19 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-size: cover;
-        
-       
+        background-size: cover;        
     }
-
     .signup-h1 {
         text-align: center;
         color:aliceblue;
         margin-bottom: 60px;
-        font-size: 40px;
-        
+        font-size: 40px;        
     }
-
     .input-container {
         display: flex;
         align-items: center;
         margin-bottom: 15px;
     }
-
     input {
         padding: 10px;
         font-size: 1em;
@@ -30,17 +24,15 @@
         border: 1px solid #ccc;
         border-radius: 5px;
     }
-
     .signup-button {
-        padding: 16px 28px;
-        font-size: 1.2em;
+        padding: 5px 10px;
+        font-size: 10px;
         color: white;
         background-color: #007bff;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
-
     .signup-button:hover {
         background-color: #0056b3;
     }

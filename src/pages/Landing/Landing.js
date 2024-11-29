@@ -10,7 +10,6 @@ import Header from '../../components/Header/Header';
 import Search from '../../components/search/search';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 
-
 function Landing() {
   return ( 
   <div
@@ -21,9 +20,7 @@ function Landing() {
     <Banner></Banner>
 
     <div className="container-row">
-      <Sidebar
-
-      />
+      <Sidebar/>
 
       <div className="body-area">
         {/* <MostPopulair></MostPopulair> */}

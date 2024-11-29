@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login/Login';
-
 import Landing from './pages/Landing/Landing';
 import Search from './components/search/search';
 import MostPopulair from './components/MostPopulair/MostPopulair';
@@ -16,7 +15,7 @@ function App() {
     setIsAuthentcated(true);
     localStorage.setItem("authToken", "testToken");
     return (
-      <div><Login/> 
+      <div><Login />
       </div>
     )
   };
@@ -42,8 +41,6 @@ function App() {
           <Route path="" element={<MostPopulair />} />
 
           <Route path="mylist" element={<Mylist />} />
-          
-
         </Route>
       </Routes>
 
