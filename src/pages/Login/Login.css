@@ -5,13 +5,18 @@
     justify-content: center;
     background-size: cover;
     height: 100vh;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    
 }
 
 .Login h1 {
-    font-size: 55px;
+    font-size: 7px;
     margin-bottom: 18px;
+    margin-top: 20px;
     color: antiquewhite;
-    font-size: 50px;
+    font-size: 52px;
     padding: 10px;
     text-align: center;
 }
@@ -20,45 +25,31 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 90px;
     padding-left: 80px;
     background-color: transparent;
     border-radius: 8px;
-    font-size: 30px;
+    font-size: 32px;
     color: antiquewhite;
 }
 
-.signup-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 17px;
-    margin-bottom: 19px;
-    padding-left: 40px;
-}
-
-.input-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.input-container img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-input {
-    padding: 15px 20px;
-    font-size: 1.2em;
-    font-weight: 100;
-    width: 250px;
-    border: 1px solid #ccc;
+button {
+    background-color: #458ad3;
+    color: white;
+    border: none;
     border-radius: 5px;
-    margin-left: 10px;
-    background-color: rgb(194, 238, 248);
+    padding: 20px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 85px;
+    width: 265px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #1e1b4d;
+    transition: background-color 0.3s ease;
 }
 
 img.username {
@@ -72,9 +63,11 @@ img.password {
 }
 
 img.signup-icon {
-    height: 90px;
+    height: 95px;
     width: auto;
-    margin-top: 5px;
+    margin-top: 30px;
+    margin-left: 75px;
     cursor: pointer;
     padding-left: 30px;
 }
+

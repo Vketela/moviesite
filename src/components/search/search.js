@@ -19,7 +19,7 @@ const Search = ({ apiKey }) => {
   ];
 
   const handleSearch = async (e) => {
-    e.preventDefault(); // Zorgt ervoor dat het formulier niet opnieuw laadt.
+    e.preventDefault(); 
     if (query.trim() === '') return;
 
     const data = await getData("/search/movie?query=" + query + "&");

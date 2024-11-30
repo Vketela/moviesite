@@ -80,7 +80,7 @@ const Login = ({ }) => {
           style={{ cursor: 'pointer' }} />
         <input
           type="password"
-          placeholder="pasword"
+          placeholder="Pasword"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -102,7 +102,6 @@ const Login = ({ }) => {
     </div>
   );
 }
-
 
 
 Login.propTypes = {
