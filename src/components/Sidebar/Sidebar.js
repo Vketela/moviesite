@@ -4,35 +4,37 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 
-
 const Sidebar = ({ onSearch, onFilterGenre }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Functie om de zoekterm bij te werken terwijl de gebruiker typt
   const handleSearch = (event) => {
-    setSearchTerm(event.target.value); //update search term in state
-    onSearch(event.target.value); // roep de functie aan om te zoeken in
+    setSearchTerm(event.target.value); 
+    onSearch(event.target.value); 
   };
-  // Functie om te filteren op genre
+  
   const handleGenreFilter = (genre) => {
-    onFilterGenre(genre); //roept de functie aan om films te filteren in 
+    onFilterGenre(genre); 
   };
 
   return (
     <div className="Sidebar-container">
       <nav className="sidebar">
         <ul className="sidebar-main-menu">
+
           <li><Link to="/landing">Home</Link></li>
+          <li><Link to="/landing/>Movies">Movies</Link></li>
+          <li><Link to="/landing/search">Search</Link></li>
+          <li><Link to="/landing/mylist">My list</Link></li>
           <li><Link to="/MostPopulair">Movies</Link></li>
           <li><Link to="/search">Search</Link></li>
           <li><Link to="/landing/mylist">My list</Link></li>
+          <li><Link to="/landing/mostpopulair">Back to Movies</Link></li>
         </ul>
         <hr />
       </nav>
     </div>
   );
 };
-
 
 Sidebar.propTypes = {
   onSearch: PropTypes.func.isRequired,

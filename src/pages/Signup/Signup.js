@@ -57,7 +57,7 @@ const Signup = ({ }) => {
 
   return (
     <div className="Signup" style={{ backgroundImage: `url(${filmhero})` }} >
-      <h1 className="signup-h1">Create Account</h1>
+      <h1 className="signup-h1">Create account</h1>
       <div className="input-container">
         <input
           type="text"

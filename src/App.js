@@ -28,22 +28,22 @@ function App() {
   }, []);
 
   return (
-
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
 
         <Route path="/landing" element={<Landing />}  >
           <Route path="search" element={<Search />} />
-
           <Route path="mostpopulair" element={<MostPopulair />} />
-          <Route path="" element={<MostPopulair />} />
-
           <Route path="mylist" element={<Mylist />} />
         </Route>
-      </Routes>
 
+          <Route path="/mostpopulair" element={<mostPopulair />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+        
     </BrowserRouter>
   );
 }

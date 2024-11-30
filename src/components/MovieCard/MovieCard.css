@@ -23,6 +23,7 @@
     padding: 5px 16px;
     width: calc(100%-40px);
     box-sizing: border-box;
+
 }
 
 p {
@@ -31,7 +32,6 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(238, 248, 247);
     margin: 0%;
-
     padding-left: 17px;
 }
 
