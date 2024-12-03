@@ -38,25 +38,28 @@ const Search = ({ apiKey }) => {
 
   return (
     <div className="search">
-      <form onSubmit={handleSearch}>
-        <input
-          type="text"
-          placeholder="Search for movies..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button type="submit">Search</button>
-      </form>
-      <div className="genre-dropdown">
-        <select value={selectedgenre} onChange={handleGenreSelect}>
-          <option value="">Select Genre</option>
-          {genres.map((genre) => (
-            <option key={genre.id} value={genre.id}>
-              {genre.name}
-            </option>
-          ))}
-        </select>
+      <div className='searchbar'>
+        <form onSubmit={handleSearch}>
+          <input
+            type="text"
+            placeholder="Search for movies..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <button type="submit">Search</button>
+        </form>
+        <div className="genre-dropdown">
+          <select value={selectedgenre} onChange={handleGenreSelect}>
+            <option value="">Select Genre</option>
+            {genres.map((genre) => (
+              <option key={genre.id} value={genre.id}>
+                {genre.name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
+      
 
       <MovieCardDeck moviesArray={movies}></MovieCardDeck>
     </div>

@@ -38,12 +38,10 @@ function App() {
           <Route path="search" element={<Search />} />
           <Route path="mostpopulair" element={<MostPopulair />} />
           <Route path="mylist" element={<Mylist />} />
+          <Route path="" element={<MostPopulair />} />
         </Route>
+      </Routes>
 
-          <Route path="/mostpopulair" element={<mostPopulair />} />
-          <Route path="/search" element={<Search />} />
-        </Routes>
-        
     </BrowserRouter>
   );
 }
