@@ -34,6 +34,9 @@ p {
     padding-left: 17px;
 }
 
+.meta-info svg {
+    font-size: 25px;
+}
 .card-fav {
     position: absolute;
     bottom: 22px;

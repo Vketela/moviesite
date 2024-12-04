@@ -1,8 +1,24 @@
-# Movie App - by Vanessa Ketelaar 
+# Movie App - Popcorn
 
 ## Projectoverzicht
-Deze applicatie stelt gebruikers in staat om films op te slaan als favorieten, films te zoeken op titel en genre, en hun persoonlijke voorkeuren te beheren. De frontend is ontwikkeld met React 
-en maakt gebruik van de TMDB API om filmdata op te halen.
+Deze applicatie stelt gebruikers in staat om films op te slaan als favorieten, films te zoeken op titel en genre, en hun persoonlijke voorkeuren te beheren. De frontend is ontwikkeld met React en maakt gebruik van de TMDB API om filmdata op te halen.
+
+## Installatie van de vereiste tools
+WebStorm (standaard IDE voor dit project):
+
+Download WebStorm via de officiële website: https://www.jetbrains.com/webstorm/.
+Installeer WebStorm en open het project in WebStorm door de projectmap te openen via File > Open.
+Node.js:
+
+Download en installeer Node.js (versie 14.0 of hoger) van https://nodejs.org/.
+npm:
+
+## Alternatieve IDE: Visual Studio Code (VS Code):
+
+Als je geen WebStorm hebt / wilt gebruiken, kun je ook Visual Studio Code gebruiken. Volg de onderstaande stappen om VS Code te installeren:
+
+Download VS Code via https://code.visualstudio.com/.
+Installeer VS Code volgens de instructies voor jouw besturingssysteem.
 
 ## Vereisten
 - Node.js (v14.0 of hoger)
@@ -16,44 +32,23 @@ git clone https://github.com/gebruikersnaam/movie-app.git
 3. Installeer de benodigde afhankelijkheden: npm install
 4. Start de applicatie: npm run start
 
-
 ## Configuratie van de API
- ik heb deze keuze gemaakt extra configuratie is neit nodig. 
-
-
-ik heb de API key  in het project gezet om het testen makkelijker te maken.
-
+ ik heb deze keuze gemaakt en de API key in het project gezet om het testen makkelijker te maken
+ extra configuratie is niet nodig. 
 
 ## Gebruik
-- **Login**: Maak een account aan om je favoriete films op te slaan.
+- **Registreren**: Maak een account aan. 
+- **Login**:  Je hebt een gebruikersnaam en password aangemaakt om films te zoeken en je favoriete films op te slaan.
 - **Film zoeken**: Gebruik de zoekfunctie om films op titel te vinden.
-- **Genres**: Klik op een genre om films te filteren (let op, de filtering is momenteel niet gekoppeld aan de backend).
+- **Genres**: Klik op de dropdown button om een genre te selecteren .
 
 ## Problemen en Oplossingen
 - Als de applicatie niet werkt, zorg er dan voor dat je Node.js en npm goed geïnstalleerd hebt.
 
-
 ## Toekomstige verbeteringen
-- Backend-integratie voor werkende genre-filtering.
-- Verbeterde zoekfunctionaliteit en gebruikersauthenticatie.
-
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
-Your X-Api-Key: popcornmovieflix:2rMriPBJ7MV5I6hlegSt
-
-Add the following to the header of your POST USER request:
-
-Headers: {
-    'Content-Type': 'application/json',
-    'X-Api-Key':popcornmovieflix:2rMriPBJ7MV5I6hlegSt
-}
+Backend-integratie: Toevoegen van een backend voor het verwerken van gebruikersgegevens en favorieten, zodat deze persistent blijven (momenteel is de app alleen frontend).
+Genre-filtering: Implementeren van een werkende genre-filtering functie die werkt via de backend.
+Verbeterde zoekfunctionaliteit: Zoekfunctie optimaliseren met ondersteuning voor meerdere filters zoals jaar, beoordeling, etc.
+Gebruikersauthenticatie: Toevoegen van gebruikersauthenticatie zodat elke gebruiker zijn/haar eigen lijst van favoriete films kan beheren.
 
        
