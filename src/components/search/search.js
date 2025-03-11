@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import './search.css';
 import MovieCardDeck from "../../components/MovieCardDeck/MovieCardDeck";
 import getData from '../../api/client';
 
-const Search = ({ apiKey }) => {
+const Search = () => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
   const [selectedgenre, setSelecteGenre] = useState('');
@@ -67,7 +66,7 @@ const Search = ({ apiKey }) => {
 };
 
 Search.propTypes = {
-  apiKey: PropTypes.string.isRequired,
+
 };
 
 

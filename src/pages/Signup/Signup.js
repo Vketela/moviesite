@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import './Signup.css';
 import filmhero from '../../images/filmhero.jpg';
 import { useNavigate } from 'react-router-dom';
 
-const Signup = ({ }) => {
+const Signup = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -40,7 +39,6 @@ const Signup = ({ }) => {
       });
 
       if (response.ok) {
-        const data = await response.json();
         alert("sign up succeful")
         handleSignupSucces();
 
@@ -89,7 +87,7 @@ const Signup = ({ }) => {
 }
 
 Signup.propTypes = {
-  onsignup: PropTypes.func.isRequired,
+  
 };
 
 Signup.defaultProps = {};

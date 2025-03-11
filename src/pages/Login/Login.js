@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import './Login.css';
 import filmhero from '../../images/filmhero.jpg';
 import UserIcon from '../../images/User-icon.png';
 import { useNavigate } from 'react-router-dom';
 import passwordIcon from '../../images/password-icon.png'
 import SignupIcon from '../../images/signup-icon.png';
+import { useAuth } from '../../context/AuthProvider';
 
 
-const Login = ({ }) => {
+const Login = () => {
+  const {login} = useAuth();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  //toegevoegd//
-  const [isRegistering, setIsRegistering] = useState(false);
+  const [error, setError] = useState('');   
   const navigate = useNavigate();
   const handleSignupClick = () => {
     navigate('/Signup')
@@ -39,7 +38,7 @@ const Login = ({ }) => {
         const data = await response.json();
 
         if (data.jwt) {
-          localStorage.setItem('token', data.jwt); // Bewaar token lokaal
+          login(data.jwt)
           navigate('/landing'); // Navigeer naar de landing-pagina
         } else {
           setError('Login failed. Please try again.');
@@ -86,8 +85,12 @@ const Login = ({ }) => {
         />
       </div>
       <button onClick={handleLoginClick}>login</button>
+
+      {/* Foutmelding weergeven */}
+      {error && <p className="error"> {error}</p>}
+
       <div className="signup-section">
-        <p>Don't have an account? Sign up</p>
+        <p>Do not have an account? Sign up</p>
       </div>
 
       <div className="signup-container">
@@ -95,6 +98,7 @@ const Login = ({ }) => {
           src={SignupIcon}
           alt="sign up"
           className="signup-icon"
+
           onClick={handleSignupClick}
           style={{ cursor: 'pointer' }}
         />
@@ -105,7 +109,7 @@ const Login = ({ }) => {
 
 
 Login.propTypes = {
-  onLogin: PropTypes.func.isRequired
+  
 };
 
 Login.defaultProps = {};
